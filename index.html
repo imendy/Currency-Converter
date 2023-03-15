@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Currency Converter</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container"">
+    <video autoplay loop muted plays-inline class="background__clip">
+      <source src="https://player.vimeo.com/external/369268218.sd.mp4?s=71a285fc2d4ee9429d0fde18e303715ec7992133&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+    </video>
+    <div class="currency__container">
+      <h1>Currency Converter</h1>
+      <div class="currency__box">
+       <select id="currency__first">
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD" selected>USD</option>
+        <option value="NGN">NGN</option>
+       </select>
+       <input type="number" id="worth__first" value="1" min="0">
+    </div>
+    <div class="currency__box">
+      <select id="currency__second">
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD">USD</option>
+        <option value="NGN" selected>NGN</option>
+      </select>
+      <input type="number" id="worth__second" disabled>
+    </div>
+    <p class="exchange__rate" id="exchange__rate">1 USD = 138.5802 JPY</p>
+    </div>
+    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emmet/2.3.6/emmet.cjs.js"></script>
+<script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+</body>
+
+</html>

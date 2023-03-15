@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+.currency__container {
+  background-color: rgba(19, 139, 144, 0.71);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 350px;
+}
+h1 {
+  color: aliceblue;
+  margin-left: 2.5rem;
+  font-size: 1.25rem
+}
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.background__clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.currency__box {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.currency__box select {
+  padding: 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.currency__box input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  text-align: right;
+  color: aliceblue;
+  cursor: pointer;
+}
+select:focus,
+input:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background__clip {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9) {
+  .background__clip {
+    width: auto;
+    height: 100%;
+  }
+}
